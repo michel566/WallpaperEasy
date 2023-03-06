@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "237712351165",
+    "project_id": "wallpapereasy-6550a",
+    "storage_bucket": "wallpapereasy-6550a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237712351165:android:bf9f882b4c6c0911ca7cd4",
+        "android_client_info": {
+          "package_name": "com.example.wallpapereasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzd_HmqOAFEU1FIe7m5V-_uom2nFucico"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237712351165:android:999dee88fee70014ca7cd4",
+        "android_client_info": {
+          "package_name": "com.example.wallpapereasy.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzd_HmqOAFEU1FIe7m5V-_uom2nFucico"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237712351165:android:534ded0e5438a2acca7cd4",
+        "android_client_info": {
+          "package_name": "com.example.wallpapereasy.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzd_HmqOAFEU1FIe7m5V-_uom2nFucico"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237712351165-dtnt8br7ie7h5i9cju8bmqjdnqqd5eeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
