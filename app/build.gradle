@@ -16,7 +16,7 @@ apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
     namespace 'com.example.wallpapereasy'
-    compileSdk 33
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.wallpapereasy"
