@@ -1,14 +1,11 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'com.google.gms.google-services'
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "kotlin-kapt"
+    id "dagger.hilt.android.plugin"
+    id "androidx.navigation.safeargs"
+    id "kotlin-parcelize"
 }
-
-apply plugin: 'kotlin-kapt'
-apply plugin: 'dagger.hilt.android.plugin'
-apply plugin: "androidx.navigation.safeargs"
-apply plugin: 'kotlin-parcelize'
-
 
 def apikeyPropertiesFile = rootProject.file ("apikey.properties")
 def apikeyProperties = new Properties()
@@ -16,6 +13,7 @@ apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
     compileSdkVersion 33
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId "com.example.wallpapereasy"
