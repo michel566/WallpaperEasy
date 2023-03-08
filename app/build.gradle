@@ -15,13 +15,12 @@ def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
-    namespace 'com.example.wallpapereasy'
     compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.wallpapereasy"
-        minSdk 21
-        targetSdk 33
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
