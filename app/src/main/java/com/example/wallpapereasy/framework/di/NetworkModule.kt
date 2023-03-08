@@ -57,9 +57,10 @@ object NetworkModule {
     @Provides
     fun provideConverterFactory(gson: Gson): GsonConverterFactory =
         GsonConverterFactory.create(gson)
-
+    @Provides
     fun provideRetrofit(
-        httpClient: OkHttpClient, converterFactory: GsonConverterFactory
+        httpClient: OkHttpClient,
+        converterFactory: GsonConverterFactory
     ): WallpapersApi = Retrofit.Builder()
         .baseUrl(BuildConfig.BASE_URL)
         .client(httpClient)
