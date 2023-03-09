@@ -7,7 +7,7 @@ plugins {
     id "kotlin-parcelize"
 }
 
-def apikeyPropertiesFile = rootProject.file ("fileconfig/apikey.properties")
+def apikeyPropertiesFile = rootProject.file ("app/apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
