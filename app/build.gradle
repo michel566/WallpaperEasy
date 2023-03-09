@@ -7,7 +7,7 @@ plugins {
     id "kotlin-parcelize"
 }
 
-def apikeyPropertiesFile = rootProject.file ("app/src/apikey.properties")
+def apikeyPropertiesFile = rootProject.file ("C:\\Users\\michelbarbosa\\AndroidStudioProjects\\WallpaperEasy\\apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
