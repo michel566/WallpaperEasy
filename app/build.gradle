@@ -7,7 +7,7 @@ plugins {
     id "kotlin-parcelize"
 }
 
-def apikeyPropertiesFile = rootProject.file ("app/apikey.properties")
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
@@ -24,7 +24,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "PRIVATE_KEY", apikeyProperties['PRIVATE_KEY']
+        buildConfigField "String", "PRIVATE_KEY" , apikeyProperties['PRIVATE_KEY']
         buildConfigField "String", "BASE_URL", "\"https://api.pexels.com/\""
     }
 
@@ -38,7 +38,7 @@ android {
             initWith debug
             applicationIdSuffix '.staging'
             minifyEnabled = true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' , 'proguard-rules-staging.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'proguard-rules-staging.pro'
         }
 
         release {
