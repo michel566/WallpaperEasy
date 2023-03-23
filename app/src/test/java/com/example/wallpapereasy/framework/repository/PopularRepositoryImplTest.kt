@@ -58,12 +58,12 @@ class PopularRepositoryImplTest {
         val result = popularPagingSource.load(
             PagingSource.LoadParams.Refresh(
                 key = null,
-                loadSize = 40,
+                loadSize = 2,
                 placeholdersEnabled = false
             )
         )
 
-        val expected = listOf(wallpapersFactory)
+        val expected = listOf(wallpapersFactory, wallpapersFactory)
 
         assertEquals(
             PagingSource.LoadResult.Page(
