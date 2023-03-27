@@ -7,6 +7,7 @@ import com.bumptech.glide.Glide
 import com.example.core.model.PhotoDomain
 import com.example.wallpapereasy.R
 import com.example.wallpapereasy.databinding.ItemPhotoBinding
+import com.example.wallpapereasy.ui.extension.loadBlurredImageWithPlaceholder
 
 class PhotoViewHolder(
     itemBinding: ItemPhotoBinding,
@@ -17,11 +18,16 @@ class PhotoViewHolder(
     private val name = itemBinding.name
 
     fun bind(photo: PhotoDomain){
-        Glide.with(itemView.context)
-            .load(photo.srcDomain.original)
-            .centerCrop()
-            .fallback(R.drawable.baseline_broken)
-            .into(image)
+//        Glide.with(itemView.context)
+//            .load(photo.srcDomain.original)
+//            .centerCrop()
+//            .fallback(R.drawable.baseline_broken)
+//            .into(image)
+
+        image.loadBlurredImageWithPlaceholder(
+            imageUrl = photo.srcDomain?.original,
+            placeholderColor = photo.avgColor
+        )
 
         name.text = photo.photographer
 

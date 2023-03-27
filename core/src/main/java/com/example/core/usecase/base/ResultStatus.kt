@@ -1,4 +1,4 @@
-package com.example.core.usecase
+package com.example.core.usecase.base
 
 sealed class ResultStatus<out T> {
     object Loading: ResultStatus<Nothing>()
